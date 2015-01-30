@@ -39,9 +39,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Netapi32\Level.cs" />
+    <Compile Include="Netapi32\NetApi32.cs" />
+    <Compile Include="Netapi32\NetApiStatus.cs" />
+    <Compile Include="Netapi32\PlatformID.cs" />
+    <Compile Include="Netapi32\ServerInfo101.cs" />
+    <Compile Include="Netapi32\ServerInfo100.cs" />
+    <Compile Include="Netapi32\ServerType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
