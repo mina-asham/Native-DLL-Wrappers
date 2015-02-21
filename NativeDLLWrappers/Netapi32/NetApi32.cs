@@ -3,6 +3,9 @@ using System.Runtime.InteropServices;
 
 namespace NativeDLLWrappers.Netapi32
 {
+    /// <summary>
+    /// Class responsible for NetApi32 DLL functionality.
+    /// </summary>
     public static class NetApi32
     {
         /// <summary>
@@ -65,7 +68,7 @@ namespace NativeDLLWrappers.Netapi32
         ///     Reserved; must be set to zero.
         /// </param>
         /// <returns>NetApiStatus code</returns>
-        [DllImport("Netapi32.dll")]
+        [DllImport("Netapi32.dll", SetLastError = true)]
         public static extern NetApiStatus NetServerEnum(
             String serverName,
             Level level,
@@ -91,7 +94,9 @@ namespace NativeDLLWrappers.Netapi32
         ///     calling the NetApiBufferAllocate function.
         /// </param>
         /// <returns>NetApiStatus code</returns>
-        [DllImport("Netapi32.dll")]
-        public static extern NetApiStatus NetApiBufferFree(IntPtr bufferPtr);
+        [DllImport("Netapi32.dll", SetLastError = true)]
+        public static extern NetApiStatus NetApiBufferFree(
+            IntPtr bufferPtr
+        );
     }
 }
