@@ -51,7 +51,6 @@
     <Compile Include="User32\KeyboardEventFlag.cs" />
     <Compile Include="User32\HardwareInput.cs" />
     <Compile Include="User32\KeyboardInput.cs" />
-    <Compile Include="User32\HadrwareInput.cs" />
     <Compile Include="User32\MouseEventFlag.cs" />
     <Compile Include="User32\MouseInput.cs" />
     <Compile Include="User32\Input.cs" />
