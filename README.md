@@ -1,4 +1,4 @@
-# Native-DLL-Wrappers
+# Native-DLL-Wrappers [![Build Status](https://travis-ci.org/mina-asham/Native-DLL-Wrappers.svg?branch=master)](https://travis-ci.org/mina-asham/Native-DLL-Wrappers)
 A collection of C# wrappers for Windows C++ DLLs, that I have needed to use before.
 
 The code is overly documented and pretty much self explanatory.
